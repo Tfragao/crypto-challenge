@@ -1,0 +1,13 @@
+CC      = gcc
+CFLAGS  = -g
+RM      = rm -f
+
+default: all
+
+all: main hexadecimalAbase64
+
+main: main.c
+    $(CC) $(CFLAGS) -o -IC main main.c
+
+clean: 
+    $(RM) main

@@ -1,13 +1,7 @@
-#include <stdio.h>
-#include <stdlib.h> 
-#include <string.h>
-#include <ctype.h>
 
-#define SIX_BITS_GROUPING 6 
-#define MASK 0x3F
+#include "../auxiliares/defs.h"
 
-int hexadecimalAentero(char hex)
-{
+int hexadecimalAentero(char hex){
   /* Me aseguro que los caracteres estan en minusculas */
   hex = tolower((int)hex);
   if(hex >= '0' && hex <= '9') {
@@ -19,12 +13,11 @@ int hexadecimalAentero(char hex)
   return 0;
 }
 
-char *hexadecimalAbase64(char *inputStr)
-{
+char* hexadecimalAbase64(char *inputStr){
   int k = 0;
   char valoresBase64[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/";
   int length = strlen(inputStr);
-  char *outputStr = (char *) calloc(length*4/3, sizeof(char));
+  char *outputStr = (char *) calloc(length + 1 , sizeof(char));
 
   if(length % 6 != 0){
     //TODO : Que hacer cuando el tamaño no es divisible por 6
@@ -45,7 +38,8 @@ char *hexadecimalAbase64(char *inputStr)
   return outputStr;
 }
 
-int main(){
+
+int main(int argc, char* argv[]){
   char inputStr[] ="49276d206b696c6c696e6720796f757220627261696e206c696b65206120706f69736f6e6f7573206d757368726f6f6d";
   printf("Valor del string en hexadecimal a base 64 : %s\n", hexadecimalAbase64(inputStr));
   return 0;
