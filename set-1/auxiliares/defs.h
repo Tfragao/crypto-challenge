@@ -9,6 +9,7 @@
 #define SIX_BITS_GROUPING 6 
 #define MASK 0x3F
 #define INT_SIZE 32
+#define ALL_POSSIBLE_CHARACTERS 256
 
 int   hexadecimalAentero(char hex);
 char* hexadecimalAbase64(char *inputStr);
@@ -17,7 +18,7 @@ char* characterToHexadecimal(char *inputStr);
 int decimalABinario(int decimal);
 char* fixedxor(char *inputStr1, char *inputStr2);
 int isnotprintable(char x);
-int singlebytexorcipher(char* input, int length);
+int singlebytexorcipher(char* input);
 
 
 #endif  /*DEFS*/

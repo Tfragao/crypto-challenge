@@ -30,20 +30,21 @@ int isnotprintable(char x){
 	return ((!isprint(x) && x != '\n') || (strchr(notallowed, x) != NULL));
 }
 
-int singlebytexorcipher(char* input, int length){
-	int i = 0, j = 0;
-	int key = -1;
-	char *out = calloc(1+length, sizeof(char));
+int singlebytexorcipher(char* inputStr){
 
-	if(input == NULL || out == NULL){
+	int key = -1;
+	int length = strlen(inputStr);
+	char *outputStr = calloc(length + 1, sizeof(char));
+
+	if(inputStr == NULL || outputStr == NULL){
 		printf("NULL pointer check failed\n");
 		return key;
 	}
-	for(j = 0; j < 256; j++){
+	for(int j = 0; j < ALL_POSSIBLE_CHARACTERS; j++){
 		int isstring = 1;
-		for (i = 0; i < length; i++){
-			out[i] =  input[i] ^ j;
-			if(isnotprintable(out[i])){
+		for (int i = 0; i < length; i++){
+			outputStr[i] =  inputStr[i] ^ j;
+			if(isnotprintable(outputStr[i])){
 				isstring = 0;
 				break;
 			}
@@ -53,15 +54,17 @@ int singlebytexorcipher(char* input, int length){
 			break;
 		}
 	}
-	free(out);
+	free(outputStr);
 	return key;
 }
+
+
 
 int main(int argc, char* argv[]){
     char hexIn[] = "1b37373331363f78151b7f2b783431333d78397828372d363c78373e783a393b3736";
     int len = strlen(hexIn);
-    char* charIn = (char*)calloc(len/2, sizeof(char));
+    char* charIn = (char*)calloc(len, sizeof(char));
     charIn = hexadecimalACharacter(hexIn);
-    printf("valor de la  clave : %d\n", singlebytexorcipher(charIn, strlen(charIn)));
+    printf("valor de la  clave : %d\n", singlebytexorcipher(charIn));
     return 0;
 }
