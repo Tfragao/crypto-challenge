@@ -9,11 +9,21 @@ int main(int argc, char* argv[]) {
         return -1;
     }
     
-    while(fgets(inputStr,100, fp) != NULL) {
-        int i =0;
-       inputStr[strlen(inputStr) - 1] = '\0';
-       singlebytexorcipher(inputStr);
-    }
+    // while(fgets(inputStr,100, fp) != NULL) {
+    //    inputStr[strlen(inputStr) - 1] = '\0';
+    //    printf("%s\n", inputStr);
+    //    singlebytexorcipher(inputStr);
+    // }
+    while(fgets(inputStr,100, fp) != NULL){
+        //inputStr[strlen(inputStr) - 1] = '\0';
+        //printf("%s", inputStr);
+        singlebytexorcipher(inputStr);
+    } 
+    //inputStr[strlen(inputStr) - 1] = '\0';
+       
+       //
+    
+    printf("\n");
     fclose(fp);
     return 0;
 }

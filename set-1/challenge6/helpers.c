@@ -70,4 +70,17 @@ char* repeatingkeyxor(char *inputStr) {
     return buffer;
 }
 
+int hamming(char *input1, char *input2, int len){
+    int distance = 0;
+    for(int i = 0; i < len; i++) {
+        int xor = input1[i] ^ input2[i];
+        while(xor != 0 ){  // nos interesa contar los unos (1's)
+            if(xor & 0x1 == 1) {
+                distance++;
+            }
+            xor = xor >> 1;
+        } 
+    }
+    return distance;
+}
 
