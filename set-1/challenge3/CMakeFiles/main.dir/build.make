@@ -83,30 +83,30 @@ CMakeFiles/main.dir/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/main.dir/main.c.s"
 	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/taisonfragao/Documents/crypto-challenge/set-1/challenge3/main.c -o CMakeFiles/main.dir/main.c.s
 
-CMakeFiles/main.dir/helpers.c.o: CMakeFiles/main.dir/flags.make
-CMakeFiles/main.dir/helpers.c.o: helpers.c
-CMakeFiles/main.dir/helpers.c.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/taisonfragao/Documents/crypto-challenge/set-1/challenge3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/main.dir/helpers.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/helpers.c.o -MF CMakeFiles/main.dir/helpers.c.o.d -o CMakeFiles/main.dir/helpers.c.o -c /Users/taisonfragao/Documents/crypto-challenge/set-1/challenge3/helpers.c
+CMakeFiles/main.dir/Users/taisonfragao/Documents/crypto-challenge/set-1/commons/helpers.c.o: CMakeFiles/main.dir/flags.make
+CMakeFiles/main.dir/Users/taisonfragao/Documents/crypto-challenge/set-1/commons/helpers.c.o: /Users/taisonfragao/Documents/crypto-challenge/set-1/commons/helpers.c
+CMakeFiles/main.dir/Users/taisonfragao/Documents/crypto-challenge/set-1/commons/helpers.c.o: CMakeFiles/main.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/taisonfragao/Documents/crypto-challenge/set-1/challenge3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/main.dir/Users/taisonfragao/Documents/crypto-challenge/set-1/commons/helpers.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/Users/taisonfragao/Documents/crypto-challenge/set-1/commons/helpers.c.o -MF CMakeFiles/main.dir/Users/taisonfragao/Documents/crypto-challenge/set-1/commons/helpers.c.o.d -o CMakeFiles/main.dir/Users/taisonfragao/Documents/crypto-challenge/set-1/commons/helpers.c.o -c /Users/taisonfragao/Documents/crypto-challenge/set-1/commons/helpers.c
 
-CMakeFiles/main.dir/helpers.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/main.dir/helpers.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/taisonfragao/Documents/crypto-challenge/set-1/challenge3/helpers.c > CMakeFiles/main.dir/helpers.c.i
+CMakeFiles/main.dir/Users/taisonfragao/Documents/crypto-challenge/set-1/commons/helpers.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/main.dir/Users/taisonfragao/Documents/crypto-challenge/set-1/commons/helpers.c.i"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/taisonfragao/Documents/crypto-challenge/set-1/commons/helpers.c > CMakeFiles/main.dir/Users/taisonfragao/Documents/crypto-challenge/set-1/commons/helpers.c.i
 
-CMakeFiles/main.dir/helpers.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/main.dir/helpers.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/taisonfragao/Documents/crypto-challenge/set-1/challenge3/helpers.c -o CMakeFiles/main.dir/helpers.c.s
+CMakeFiles/main.dir/Users/taisonfragao/Documents/crypto-challenge/set-1/commons/helpers.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/main.dir/Users/taisonfragao/Documents/crypto-challenge/set-1/commons/helpers.c.s"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/taisonfragao/Documents/crypto-challenge/set-1/commons/helpers.c -o CMakeFiles/main.dir/Users/taisonfragao/Documents/crypto-challenge/set-1/commons/helpers.c.s
 
 # Object files for target main
 main_OBJECTS = \
 "CMakeFiles/main.dir/main.c.o" \
-"CMakeFiles/main.dir/helpers.c.o"
+"CMakeFiles/main.dir/Users/taisonfragao/Documents/crypto-challenge/set-1/commons/helpers.c.o"
 
 # External object files for target main
 main_EXTERNAL_OBJECTS =
 
 main: CMakeFiles/main.dir/main.c.o
-main: CMakeFiles/main.dir/helpers.c.o
+main: CMakeFiles/main.dir/Users/taisonfragao/Documents/crypto-challenge/set-1/commons/helpers.c.o
 main: CMakeFiles/main.dir/build.make
 main: lib/libgtest_main.a
 main: lib/libgtest.a

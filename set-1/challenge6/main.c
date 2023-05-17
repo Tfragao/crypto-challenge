@@ -1,4 +1,4 @@
-#include "defs.h"
+#include "../commons/defs.h"
 
 int main(int argc, char* argv[]) {
      FILE *fp;

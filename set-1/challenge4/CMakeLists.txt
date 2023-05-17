@@ -18,8 +18,8 @@ enable_testing()
 add_executable(
   main
   main.c
-  helpers.c 
-  defs.h
+  ../commons/helpers.c 
+  ../commons/defs.h
 )
 target_link_libraries(
   main

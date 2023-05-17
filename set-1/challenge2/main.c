@@ -1,4 +1,4 @@
-#include "defs.h"
+#include "../commons/defs.h"
 
 int main(int argc, char* argv[]){
     char in1[] = "1c0111001f010100061a024b53535009181c";

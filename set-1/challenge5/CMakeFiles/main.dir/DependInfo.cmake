@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/Users/taisonfragao/Documents/crypto-challenge/set-1/challenge5/helpers.c" "CMakeFiles/main.dir/helpers.c.o" "gcc" "CMakeFiles/main.dir/helpers.c.o.d"
+  "/Users/taisonfragao/Documents/crypto-challenge/set-1/commons/helpers.c" "CMakeFiles/main.dir/Users/taisonfragao/Documents/crypto-challenge/set-1/commons/helpers.c.o" "gcc" "CMakeFiles/main.dir/Users/taisonfragao/Documents/crypto-challenge/set-1/commons/helpers.c.o.d"
   "/Users/taisonfragao/Documents/crypto-challenge/set-1/challenge5/main.c" "CMakeFiles/main.dir/main.c.o" "gcc" "CMakeFiles/main.dir/main.c.o.d"
   )
 

@@ -1,6 +1,6 @@
 CMakeFiles/main.dir/main.c.o: \
   /Users/taisonfragao/Documents/crypto-challenge/set-1/challenge5/main.c \
-  /Users/taisonfragao/Documents/crypto-challenge/set-1/challenge5/defs.h \
+  /Users/taisonfragao/Documents/crypto-challenge/set-1/challenge5/../commons/defs.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/stdio.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/_stdio.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/sys/cdefs.h \
